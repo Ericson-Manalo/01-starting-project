@@ -23,7 +23,7 @@ function Header() {
   );
 }
 
-function CoreConcept() {
+function CoreConcept(props) {
   return (
     <li>
       <img src="" alt="" />
