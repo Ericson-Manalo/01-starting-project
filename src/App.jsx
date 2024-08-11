@@ -1,9 +1,6 @@
-import imgConcepts from "./assets/components.png"
 import { CORE_CONCEPTS  } from "./data";
 import Header from "./components/Header";
 import CoreConcept from "./components/CoreConcept";
-
-
 
 function App() {
   return (
