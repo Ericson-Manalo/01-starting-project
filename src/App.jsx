@@ -5,8 +5,8 @@ import TabButton from "./components/TabButton";
 
 function App() {
 
-  function handleClick(){
-    console.log("hello");
+  function handleClick(selectedButton){
+    console.log(selectedButton);
 }
 
   return (
@@ -31,10 +31,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={handleClick}> Components </TabButton>
-            <TabButton onSelect={handleClick}> JSX </TabButton>
-            <TabButton onSelect={handleClick}> Props </TabButton>
-            <TabButton onSelect={handleClick}> State </TabButton>
+            <TabButton onSelect={() => handleClick('components')}> Components </TabButton>
+            <TabButton onSelect={() => handleClick('jsx')}> JSX </TabButton>
+            <TabButton onSelect={() => handleClick('props')}> Props </TabButton>
+            <TabButton onSelect={() => handleClick('state')}> State </TabButton>
 
           </menu>
 
